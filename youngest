@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+    int AgeOfRam, AgeOfShyam, AgeOfAjay;
+    printf("Enter the age of Ram\n");
+    scanf("%d",&AgeOfRam);
+    printf("Enter the Age of shyam\n");
+    scanf("%d",&AgeOfShyam);
+    printf("Enter the Age of Ajay\n");
+    scanf("%d",&AgeOfAjay);
+    if(AgeOfRam<AgeOfShyam && AgeOfRam<AgeOfAjay)
+    {
+        printf("%d",AgeOfRam);
+    }
+    else if(AgeOfShyam<AgeOfAjay)
+    {
+        printf("%d",AgeOfShyam);
+    }
+    else
+    printf("The youngest Age among three is %d",AgeOfAjay);
+}
