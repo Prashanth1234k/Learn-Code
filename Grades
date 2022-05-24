@@ -1,0 +1,43 @@
+#include<stdio.h>
+int main()
+{
+    float PhysicsSubjectMark, ChemistrySubjectMark, BiologySubjectMark, ComputerSubjectMark, OverallMarksOfSubjects, PerAverageMarkOfAllSubjects;
+    printf("Enter the Physics marks\n");
+    scanf("%f",&PhysicsSubjectMark);
+    printf("Enter the Chemistry marks\n");
+    scanf("%f",&ChemistrySubjectMark);
+    printf("Enter the Biology marks\n");
+    scanf("%f",&BiologySubjectMark);
+    printf("Enter the Computer marks\n");
+    scanf("%f",&ComputerSubjectMark);
+    OverallMarksOfSubjects=PhysicsSubjectMark+ChemistrySubjectMark+BiologySubjectMark+ComputerSubjectMark;
+    printf("The sum of all the marks %f\n",OverallMarksOfSubjects);
+    PerAverageMarkOfAllSubjects=(OverallMarksOfSubjects/4);
+    printf("The percentage of marks %f\n",PerAverageMarkOfAllSubjects);
+    if(PerAverageMarkOfAllSubjects>=90)
+    {
+        printf("Grade A\n");
+    }
+    else if(PerAverageMarkOfAllSubjects>=80)
+    {
+        printf("Grade B\n");
+    }
+    else if(PerAverageMarkOfAllSubjects>=70)
+    {
+        printf("Grade C\n");
+    }
+    else if(PerAverageMarkOfAllSubjects>=60)
+    {
+        printf("Grade D\n");
+    }
+    else if(PerAverageMarkOfAllSubjects>=50)
+    {
+        printf("Grade E\n");
+    }
+    else if(PerAverageMarkOfAllSubjects<=50)
+    {
+        printf("Grade F\n");
+    }
+    else
+    printf("Please enter valid marks\n");
+}
