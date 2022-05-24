@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+    int days,year,months,weeks;
+    printf("Enter the numbers of day\n");
+    scanf("%d",&days);
+    year=days/365;
+    months=days/30;
+    weeks=days/7;
+    printf("The number of years %d\n",year);
+    printf("The numbetr of months %d\n", months);
+    printf("The number of weeks %d\n", weeks);
+}
