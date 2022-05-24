@@ -1,0 +1,45 @@
+#include<stdio.h>
+int main()
+{
+  float ElectricUnits, TotalElecBill,FirstfiftyUnits,NextRemUnits,FirstNextHundredUnits, SecondNextHundredUnits;
+  printf("Enter the Electricity Unit\n");
+  scanf("%f",&ElectricUnits);
+  if(ElectricUnits<=50)
+  {
+      TotalElecBill=(ElectricUnits*0.55);
+      TotalElecBill=TotalElecBill+(TotalElecBill*0.20);
+      printf("%f",TotalElecBill);
+  }
+  else if( ElectricUnits>50 && ElectricUnits<=150)
+  {
+      FirstfiftyUnits=(50*0.55);
+      ElectricUnits=ElectricUnits-50;
+      NextRemUnits=(ElectricUnits*0.75);
+      TotalElecBill=FirstfiftyUnits+NextRemUnits;
+      TotalElecBill=TotalElecBill+(TotalElecBill*0.20);
+      printf("Total Electric Bill %f",TotalElecBill);
+  }
+  else if(ElectricUnits>150 && ElectricUnits <=250)
+  {
+      FirstfiftyUnits=(50*0.55);
+      FirstNextHundredUnits=(100*0.75);
+      NextRemUnits=ElectricUnits-150;
+      NextRemUnits=NextRemUnits*1.20;
+      TotalElecBill=FirstfiftyUnits+FirstNextHundredUnits+NextRemUnits;
+      TotalElecBill=TotalElecBill+(TotalElecBill*0.20);
+      printf("Total Electric Bill %f",TotalElecBill);
+  }
+    else if(ElectricUnits>250)
+  {
+      FirstfiftyUnits=(50*0.55);
+      FirstNextHundredUnits=(100*0.75);
+      SecondNextHundredUnits=(100*1.20);
+      NextRemUnits=ElectricUnits-250;
+      NextRemUnits=NextRemUnits*1.50;
+      TotalElecBill=FirstfiftyUnits+FirstNextHundredUnits+SecondNextHundredUnits+NextRemUnits;
+      TotalElecBill=TotalElecBill+(TotalElecBill*0.20);
+      printf("Total Electric Bill %f",TotalElecBill);
+}
+else 
+printf("Invalid Unit\n");
+}
