@@ -1,0 +1,71 @@
+#include<stdio.h>
+int main()
+{
+    int First_Matrix[10][10],Second_Matrix[10][10],AddOfTwoMatrix[10][10],SubOfTwoMatrix[10][10],MulOfTwoMatrix[10][10],Row_values,Column_values;
+    printf("Enter the size of the matrics1\n");
+    scanf("%d %d",&Row_values,&Column_values);
+    printf("Enter the values of matrics 1\n");
+    for(int i=0;i<Row_values;i++)
+    {
+        for(int j=0;j<Column_values;j++)
+        {
+            scanf("%d",&First_Matrix[i][j]);
+        }
+    }
+    printf("The matrics one values\n");
+    for(int i=0;i<Row_values;i++)
+    {
+        for(int j=0;j<Column_values;j++)
+        {
+            printf("%d\t",First_Matrix[i][j]);
+        }
+       printf("\n");
+    }
+    printf("Enter the values of matrics 2\n");
+    for(int i=0;i<Row_values;i++)
+    {
+       for(int j=0;j<Column_values;j++)
+        {
+            scanf("%d",&Second_Matrix[i][j]);
+        }
+    }
+    printf("The matrics two values\n");
+    for(int i=0;i<Row_values;i++)
+    {
+        for(int j=0;j<Column_values;j++)
+        {
+            printf("%d\t",Second_Matrix[i][j]);
+        }
+        printf("\n");
+    }
+    printf("The Addition of Two matrics\n");
+    for(int i=0;i<Row_values;i++)
+    {
+        for(int j=0;j<Column_values;j++)
+        {
+            AddOfTwoMatrix[i][j]=First_Matrix[i][j]+Second_Matrix[i][j];
+            printf("%d\t",AddOfTwoMatrix[i][j]);
+        }
+        printf("\n");
+    }
+    printf("The Subration of Two matrics\n");
+    for(int i=0;i<Row_values;i++)
+    {
+        for(int j=0;j<Column_values;j++)
+        {
+            SubOfTwoMatrix[i][j]=First_Matrix[i][j]-Second_Matrix[i][j];
+            printf("%d\t",SubOfTwoMatrix[i][j]);
+        }
+        printf("\n");
+    }
+    printf("The multiplication of two matrics\n");
+    for(int i=0;i<Row_values;i++)
+    {
+        for(int j=0;j<Column_values;j++)
+        {
+            MulOfTwoMatrix[i][j]=First_Matrix[i][j]*Second_Matrix[j][i];
+            printf("%d\t",MulOfTwoMatrix[i][j]);
+        }
+        printf("\n");
+    }
+}
