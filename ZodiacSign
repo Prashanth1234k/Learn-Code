@@ -1,0 +1,58 @@
+#include<stdio.h>
+int main()
+{
+    int MonthOfBirth,Birth_Date;
+    printf("Enter the Month and date of birth\n");
+    scanf("%d %d",&MonthOfBirth,&Birth_Date);
+    if((MonthOfBirth == 12 && Birth_Date>=22) || (MonthOfBirth==1 && Birth_Date<=19))
+    {
+        printf("Capricorn");
+    }
+    else if((MonthOfBirth == 1 && Birth_Date>=20)||(MonthOfBirth==2 && Birth_Date<=17))
+    {
+        printf("Aquaris");
+    }
+    else if((MonthOfBirth == 2 && Birth_Date>=18)||(MonthOfBirth==3 && Birth_Date<=19))
+    {
+        printf("Pisces");
+    }
+    else if((MonthOfBirth == 3 && Birth_Date>=20)||(MonthOfBirth==4 && Birth_Date<=19))
+    {
+        printf("Aries");
+    }
+     else if((MonthOfBirth == 4 && Birth_Date>=20)||(MonthOfBirth==5 && Birth_Date<=20))
+    {
+        printf("Taurus");
+    }
+       else if((MonthOfBirth == 5 && Birth_Date>=21)||(MonthOfBirth==6 && Birth_Date<=20))
+    {
+        printf("Gemini");
+    }
+        else if((MonthOfBirth == 6 && Birth_Date>=21)||(MonthOfBirth==7 && Birth_Date<=22))
+    {
+        printf("Cancer");
+    }
+        else if((MonthOfBirth == 7 && Birth_Date>=23)||(MonthOfBirth==8 && Birth_Date<=22))
+    {
+        printf("Leo");
+    }
+        else if((MonthOfBirth == 8 && Birth_Date>=23)||(MonthOfBirth==9 && Birth_Date<=22))
+    {
+        printf("Virgo");
+    }
+         else if((MonthOfBirth == 9 && Birth_Date>=23)||(MonthOfBirth==10 && Birth_Date<=22))
+    {
+        printf("Libra");
+    }
+         else if((MonthOfBirth == 10 && Birth_Date>=23)||(MonthOfBirth==11 && Birth_Date<=21))
+    {
+        printf("scorpio");
+    }
+         else if((MonthOfBirth == 11 && Birth_Date>=22)||(MonthOfBirth==12 && Birth_Date<=21))
+    {
+        printf("Sagittarius");
+    }
+    else 
+    printf("Invalid date\n");
+    return 0;
+}
