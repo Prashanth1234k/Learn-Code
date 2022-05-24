@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+        int ValueOfFirstSideTriangle, SecondSideTriangleValue, ThirdSideValueOfTriangle;
+        printf("Enter the First side of the Triangle\n");
+        scanf("%d", &ValueOfFirstSideTriangle);
+        printf("Enter the Second side of the Triangle\n");
+        scanf("%d",&SecondSideTriangleValue);
+        printf("Enter the Value of Third side\n");
+        scanf("%d",&ThirdSideValueOfTriangle);
+        if((ValueOfFirstSideTriangle+SecondSideTriangleValue>ThirdSideValueOfTriangle)
+        ||(SecondSideTriangleValue+ThirdSideValueOfTriangle>ValueOfFirstSideTriangle)
+        ||(ThirdSideValueOfTriangle+ValueOfFirstSideTriangle>SecondSideTriangleValue))
+        {
+            printf("The Triangle is valid\n");
+        }
+        else
+        printf("The Triangle is invalid\n");
+}
