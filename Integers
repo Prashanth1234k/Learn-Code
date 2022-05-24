@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+    int FirstNumber,SecondNumber;
+    printf("Enter the value of Number 1\n");
+    scanf("%d",&FirstNumber);
+    printf("Enter the value of Number 2\n");
+    scanf("%d",&SecondNumber);
+    if(FirstNumber==30 || SecondNumber==30)
+    {
+        printf("The individual numbers is True\n");
+    }
+    else if(FirstNumber+Num2==30)
+    {
+        printf("The sum of two numbers is True");
+    }
+    else
+    printf("False\n");
+}
